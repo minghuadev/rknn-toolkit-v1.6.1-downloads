@@ -1,0 +1,51 @@
+
+$ cd wheels/packages/
+
+$ ls -l
+-rw-rw-r--+         580 May 27 00:19 packages.md5sum
+-rw-r--r--+          64 May 26 02:14 requirements-cpu.txt
+-rw-r--r--+          74 May 26 02:14 requirements-gpu.txt
+-rw-r--r--+    33818354 May 21 20:15 rknn_toolkit-1.6.1-cp35-cp35m-linux_aarch64.whl
+-rw-r--r--+   137382389 May 27 00:19 rknn_toolkit-1.6.1-cp35-cp35m-linux_x86_64.whl
+-rw-r--r--+   137559801 May 21 20:15 rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl
+-rw-r--r--+   119482134 May 24 18:43 rknn_toolkit-1.6.1-cp36-cp36m-macosx_10_15_x86_64.whl
+-rw-r--r--+   112550028 May 24 19:38 rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl
+-rw-r--r--+    38189242 May 24 20:21 rknn_toolkit-1.6.1-cp37-cp37m-linux_aarch64.whl
+-rw-r--r--+   117640767 May 24 18:44 rknn_toolkit-1.6.1-cp37-cp37m-macosx_10_15_x86_64.whl
+
+$ sha256sum * > ../../readme-wheels-sums-sha256
+
+$ rm rknn_toolkit-1.6.1-cp35-cp35m-linux_aarch64.whl
+$ rm rknn_toolkit-1.6.1-cp35-cp35m-linux_x86_64.whl
+$ rm rknn_toolkit-1.6.1-cp36-cp36m-macosx_10_15_x86_64.whl
+$ rm rknn_toolkit-1.6.1-cp37-cp37m-macosx_10_15_x86_64.whl
+
+
+
+$ ls -l
+-rw-rw-r--+         580 May 27 00:19 packages.md5sum
+-rw-r--r--+          64 May 26 02:14 requirements-cpu.txt
+-rw-r--r--+          74 May 26 02:14 requirements-gpu.txt
+-rw-r--r--+   137559801 May 21 20:15 rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl
+-rw-r--r--+   112550028 May 24 19:38 rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl
+-rw-r--r--+    38189242 May 24 20:21 rknn_toolkit-1.6.1-cp37-cp37m-linux_aarch64.whl
+
+
+$ split -b 80M rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl
+$ mkdir rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl-split
+$ mv xa* rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl-split/
+
+$ ls -l rknn_toolkit-1.6.1-cp36-cp36m-win_amd64.whl-split
+-rw-rw-r--+   83886080 Aug  8 11:19 xaa
+-rw-rw-r--+   28663948 Aug  8 11:19 xab
+
+
+$ split -b 80M rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl
+$ mkdir rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl-split
+$ mv xa* rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl-split/
+
+$ ls -l rknn_toolkit-1.6.1-cp36-cp36m-linux_x86_64.whl-split/
+-rw-rw-r--+    83886080 Aug  8 11:21 xaa
+-rw-rw-r--+    53673721 Aug  8 11:21 xab
+
+

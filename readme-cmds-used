@@ -1,0 +1,19 @@
+
+$ wget https://github.com/rockchip-linux/rknn-toolkit/releases/download/v1.6.1/rknn-toolkit-v1.6.1-packages.tar.gz
+--2021-08-08 10:46:46--  https://github.com/rockchip-linux/rknn-toolkit/releases/download/v1.6.1/rknn-toolkit-v1.6.1-packages.tar.gz
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-releases.githubusercontent.com/185906644/6504e880-bfad-11eb-8060-73d6f8fd7d85?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210808T174646Z&X-Amz-Expires=300&X-Amz-Signature=7e11f1e6340de4a7c48d43246920ccae121398e7ae71c2caa892fc6cdd5dd320&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=185906644&response-content-disposition=attachment%3B%20filename%3Drknn-toolkit-v1.6.1-packages.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2021-08-08 10:46:47--  https://github-releases.githubusercontent.com/185906644/6504e880-bfad-11eb-8060-73d6f8fd7d85?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210808T174646Z&X-Amz-Expires=300&X-Amz-Signature=7e11f1e6340de4a7c48d43246920ccae121398e7ae71c2caa892fc6cdd5dd320&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=185906644&response-content-disposition=attachment%3B%20filename%3Drknn-toolkit-v1.6.1-packages.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-releases.githubusercontent.com (github-releases.githubusercontent.com)... 185.199.109.154, 185.199.110.154, 185.199.111.154, ...
+Connecting to github-releases.githubusercontent.com (github-releases.githubusercontent.com)|185.199.109.154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 692429486 (660M) [application/octet-stream]
+Saving to: ‘rknn-toolkit-v1.6.1-packages.tar.gz’
+
+rknn-toolkit-v1.6.1-packages.tar.gz        100%[=====================================================================================>] 660.35M  1.13MB/s    in 9m 45s
+
+2021-08-08 10:56:32 (1.13 MB/s) - ‘rknn-toolkit-v1.6.1-packages.tar.gz’ saved [692429486/692429486]
+
+

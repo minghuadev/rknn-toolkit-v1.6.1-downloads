@@ -1,0 +1,13 @@
+
+
+ls -lrt
+
+-rw-rw-r--+   692429486 May 27 21:08 rknn-toolkit-v1.6.1-packages.tar.gz
+-rw-rw-r--+        2242 Aug  8 11:02 readme-cmds-used
+-rw-rw-r--+        2914 Aug  8 11:07 readme-links
+-rw-rw-r--+        1060 Aug  8 11:11 readme-wheels-sums-sha256
+drwxrwxr-x+           0 Aug  8 11:25 wheels
+-rw-rw-r--+        2158 Aug  8 11:29 readme-split-commands
+-rw-rw-r--+           0 Aug  8 11:07 readme-list-files
+
+
